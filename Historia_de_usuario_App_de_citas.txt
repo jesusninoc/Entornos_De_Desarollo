@@ -1,0 +1,77 @@
+Historia de usuario: Registro y creación de perfil
+
+ID: HU-01
+Épica: Gestión de usuarios
+Prioridad: Alta
+
+HISTORIA DE USUARIO
+
+Como usuario que quiere utilizar una aplicación de citas,
+quiero poder registrarme y crear mi perfil con mis datos básicos, fotografías y preferencias,
+para poder mostrarme a otros usuarios y encontrar personas compatibles conmigo.
+
+DESCRIPCIÓN / PETICIÓN
+
+Se solicita desarrollar la primera funcionalidad de la aplicación de citas: registro y creación de perfil de usuario.
+
+El usuario deberá poder crear una cuenta introduciendo su nombre, correo electrónico, contraseña, fecha de nacimiento y género. Una vez registrado, podrá completar su perfil añadiendo una descripción, fotografías y sus preferencias de búsqueda.
+
+La aplicación deberá comprobar que los datos obligatorios son correctos antes de permitir finalizar el registro.
+
+CRITERIOS DE ACEPTACIÓN
+
+- El usuario puede registrarse utilizando un correo electrónico válido y una contraseña.
+- El sistema no permite registrarse con un correo electrónico que ya esté asociado a otra cuenta.
+- El usuario debe tener una edad mínima de 18 años.
+- El usuario debe aceptar los términos y condiciones de la app mostrados antes de finalizar su registro.
+- El usuario debe introducir los campos obligatorios para completar el registro.
+- El usuario puede añadir una fotografía de perfil.
+- El usuario puede escribir una descripción personal.
+- El usuario puede indicar sus preferencias de búsqueda.
+- Si existe algún error en los datos introducidos, el sistema muestra un mensaje explicativo.
+- Una vez completado correctamente el registro, el usuario puede acceder a su perfil.
+- La contraseña no se almacena ni se muestra en texto plano.
+- El usuario debe poner su ubicación para tener mejores recomendaciones.
+- El usuario tiene un limite de 40 likes diarios si usa la versión gratuita de la app.
+- Si alguna de las normas dictadas en los términos y condiciones es vulnerada se dará un primer aviso al usuario.
+- La aplicación tiene permiso de bloquear indefinidamente la cuenta del usuario en caso de sufrir mas de 4 reportes justificados y/o faltas a las normas.
+
+DEFINITION OF DONE
+
+La historia se considera terminada cuando:
+
+- El registro está implementado y funciona correctamente.
+- Las validaciones de los campos están implementadas.
+- Se han realizado pruebas de los casos principales y casos de error.
+- La información del usuario se almacena correctamente.
+- El usuario puede acceder y modificar posteriormente su perfil.
+- No existen errores críticos conocidos.
+- El código ha sido revisado por otro miembro del equipo.
+- La funcionalidad está integrada en la rama principal del proyecto.
+
+POSIBLES TAREAS TÉCNICAS
+
+1. Diseñar la pantalla de registro.
+2. Diseñar la pantalla de creación de perfil.
+3. Crear el modelo de datos del usuario.
+4. Implementar el registro.
+5. Implementar las validaciones.
+6. Implementar la subida de fotografías.
+7. Implementar el almacenamiento de preferencias.
+8. Crear las pruebas unitarias.
+9. Crear pruebas de integración.
+10. Revisar e integrar el código.
+
+| Prioridad                  | Tarea                                                | Motivo                                                                                                           |
+| -------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **1 — Muy alta**           | **3. Crear el modelo de datos del usuario**          | Es la base para almacenar la información necesaria del registro y perfil.                                        |
+| **2 — Muy alta**           | **4. Implementar el registro**                       | Es la funcionalidad principal de esta historia de usuario.                                                       |
+| **3 — Muy alta**           | **5. Implementar las validaciones**                  | Son necesarias para cumplir los criterios de aceptación y evitar datos incorrectos.                              |
+| **4 — Alta**               | **1. Diseñar la pantalla de registro**               | Permite al usuario introducir los datos necesarios para crear la cuenta.                                         |
+| **5 — Alta**               | **2. Diseñar la pantalla de creación de perfil**     | Necesaria para completar el perfil después del registro.                                                         |
+| **6 — Alta**               | **7. Implementar el almacenamiento de preferencias** | Forma parte de la creación del perfil y de las preferencias de búsqueda.                                         |
+| **7 — Media**              | **6. Implementar la subida de fotografías**          | Es una funcionalidad del perfil, pero puede desarrollarse después de tener registro y datos básicos funcionando. |
+| **8 — Media**              | **8. Crear las pruebas unitarias**                   | Necesarias para comprobar individualmente el funcionamiento de las partes desarrolladas.                         |
+| **9 — Media**              | **9. Crear pruebas de integración**                  | Conviene realizarlas cuando las funcionalidades principales ya estén implementadas.                              |
+| **10 — Alta al finalizar** | **10. Revisar e integrar el código**                 | Aunque aparece al final del flujo de desarrollo, es imprescindible antes de considerar terminada la historia.    |
+
